@@ -25,12 +25,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin.className} bg-primary-950 text-primary-100 min-h-dvh flex flex-col`}
+        className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-dvh flex flex-col relative`}
       >
         <Header />
 
-        <div className="flex-1 px-8 py-12">
-          <main className="max-w-7xl m-auto">{children}</main>
+        <div className="flex-1 px-8 py-12 grid">
+          <main className="max-w-7xl mx-auto w-full">{children}</main>
         </div>
 
         <Footer />
